@@ -1,0 +1,224 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.6;
+	text-align: center;
+	color: #333333;
+	transition: all 0.6s;
+}
+
+header {
+	/*fix header to the top of the browser window*/
+	position: fixed;
+	top: 0;
+	/*make it full width*/
+	width: 100%;
+	/*set background colour to white*/
+	background-color: #ffffff;
+	/*add 20px padding to top and bottom*/
+	padding: 20px 0;
+	/*z-index allows us to move content along
+	the z-axis, much like layers in photoshop - 
+	type z-index hierarchy into google and
+	 show image explaining natural page hierarchy.*/
+	z-index: 10;
+
+}
+
+nav a {
+	/*change text colour to #333333*/
+	color: #333333;
+	/*change the font weight to bold*/
+	font-weight: 700;
+	/*remove the underline from our links*/
+	text-decoration: none;
+	/*make our text uppercase*/
+	text-transform: uppercase;
+	/*increase letter spacing to 1px*/
+	letter-spacing: 1px;
+	/*add 10px padding on each side*/
+	padding: 0 10px;
+
+	/*When adding in hover effects, its
+	nice to use transitions to smoothly change between
+	properties.*/
+	/*transitions are structured as follows:
+	transition: property, timing function(optional), duration*/
+	transition: color 0.25s ease;
+}
+
+/*add in hover state*/
+nav a:hover {
+	/*change text colour to #5aa2ba*/
+	color: #5aa2ba;
+}
+
+/*Here we add padding to the top of our containers
+to create space between them, and to allow for our
+fixed header*/
+.container {
+	/*there is padding set on .container from the lanes.css
+	so we use padding-top to make sure we don't override
+	any other padding by mistake*/
+	padding-top: 150px;
+}
+
+hr {
+	/*we remove the border from the hr tag, as by
+	default it has a weird inset border on all sides*/
+	border: none;
+	border-bottom: solid #000000 1px;
+	width: 100px;
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+
+.date {
+	letter-spacing: 2px;
+	color: #b7bbbb;
+	/*Because span elements are by default inline
+	elements, we can't add margin to the bottom,
+	to make this work we could change to inline-block*/
+	/*margin-bottom: 25px;*/
+}
+
+/*instead we add margin to top of p*/
+p {
+	margin: 25px 0 50px 0;
+}
+
+blockquote {
+	font-size: 25px;
+	font-weight: 300;
+}
+
+/*separate the images in columns with two images
+stacked*/
+.top-image {
+	margin-bottom: 10px;
+}
+
+/*Go to learnlayout.com - table of contents - position, to demonstrate*/
+.caption {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color: #ffffff;
+	padding: 5px 10px;
+}
+
+/*add the correct positioning relative to our .columns classes,
+for our absolutely positioned span captions*/
+.columns {
+	position: relative;
+}
+
+footer {
+	padding: 50px 0;
+}
+
+footer img {
+	width: 120px;
+	border-radius: 60px;
+	/*border-radius: 50%;*/
+}
+
+.lightbox {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/* our header has z-index of 10 */
+	/* z-index is a vertical layering system to position fixed/absolute items that sit on top of other things */
+	z-index: 20;
+	width: 100%;
+	/*height: 100vh;*/
+	text-align: center;
+	background: rgba(255, 255, 255, 0.5);
+	/* hidden on page load */
+	display: none;
+}
+
+.lightbox img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	/*text-align: center;
+	margin: 0 auto 0 auto;*/
+}
+
+.distance {
+	position: fixed;
+	top: 0;
+	right: 0;
+	border: solid 4px #000;
+	z-index: 30;
+	padding: 20px;
+}
+
+.blue {
+	background-color: #4B97FB;
+}
+
+.rose {
+	background-color: rgba(166, 56, 30, 0.15);
+}
+
+.cubism {
+	background-color: rgba(85, 79, 164, 0.15);
+}
+
+section img {
+	cursor: pointer;
+	/* always add transitions on the element that is not hovering */
+	transition: all 300ms;
+}
+
+/* hover over the section img */
+section img:hover {
+	/* move the up by 5px - translateY() */
+	transform: translateY(-5px);	
+	/* box-shadow */
+	box-shadow: 0 5px 3px rgba(0,0,0,0.2);
+}
+
+
+
+/*.row {
+	border: solid 12px #4B97FB;
+}
+
+.columns {
+	border: solid 12px #FF7163;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

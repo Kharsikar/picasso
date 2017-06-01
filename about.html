@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+
+		<title>Picasso</title>
+		<meta name="description" content="Pablo Picasso- sculptor, printmaker, cermaicist, stage designer, poet and playwright">
+
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<!-- we are using a grid system for our layout, so add this before
+		our style.css, go to lanes.steer.me for more info -->
+		<link rel="stylesheet" href="css/lanes.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+
+	<body>
+
+		<header>
+			<h1>
+				<img src="images/logo.png" alt="Picasso logo">
+			</h1>
+
+			<nav>
+			<!-- Here we use anchor tags that link to a section on our
+			page based on the id of that section ie. href="#rose" jumps to
+			id="rose" -->      
+				<a href="#blue">Blue</a>
+				<a href="#rose">Rose</a>
+				<a href="#cubism">Cubism</a>
+				<a href="about.html">About</a>
+			</nav>
+		</header>
+		<!-- Pixel counter for JS, used to display our pixels as we
+	scroll down our page, add in later -->
+		<div class="distance">1000</div>
+
+		<!-- From the lanes.css documentation, we can see
+		that the default setup uses the container class to
+		center our content amongst other things-->
+		<section class="container" id="blue">
+		<!-- we use the hr tag to create horizontal lines
+		that we can style up using css, note it has
+		no closing tag -->
+			<hr>
+			<!-- for every new 'line' we a div class="row" -->
+			<div class="row">
+			<!-- Our grid gives us 12 columns, here we want our content to be
+			8 columns wide and centered, so we add classes accordingly -->
+				<div class="eight columns centered">
+					<h2>About Picasso</h2>
+					<!-- Span tags are similar to divs, they
+					are general use tags, and are inline
+					elements by default -->
+					<span class="date">1901-1904</span>
+					<p>During which Picasso would paint works of blue and blue-green shades to give off a sad feeling. Beggars and prostitutes were the usual focal point of these works. Picasso was inspired to do this by a trip he made through Spain and by the suicide of his friend Carlos Casagemas.</p>
+				
+        <p>Lorem ipsum dolor sit amet, soluta graeci sea ad. Ei modus graeci imperdiet mei. Meis iudicabit cum et, ludus appareat euripidis ad pri. Cu est splendide aliquando. Pri te consul persius. Prompta fuisset ocurreret sea et, quo habeo latine nonumes ne, ea pro zril admodum lucilius.</p>
+
+<p>Mel primis integre copiosae in, pro cu utroque partiendo necessitatibus. Mel suas adhuc ad, laoreet fuisset periculis et per, pri dolores hendrerit ad. Eu duo commodo delenit mediocrem, in eum audire necessitatibus. An autem noluisse qualisque pri, mel an singulis elaboraret.</p>
+
+<p>Ne purto veritus expetendis vim, vis ei atqui perpetua moderatius. Mea an minim consequat, velit noster facilis cu sea. Natum eligendi appetere nec ea, pri ne ullum adipiscing moderatius, qui rebum fierent elaboraret id. Te utroque euripidis vix, regione ornatus vis et. Nostrum corrumpit vim at, his sumo vidit ceteros ne.</p>
+
+<p>Duo id putant regione platonem. In dico velit dicit sed, eam malorum pertinax mediocrem ei. Nam eu enim feugait similique, in sit movet dolores tacimates, simul graece eum et. Quo et illum repudiare, quo illum harum utamur in. Tractatos honestatis nec id, vis ipsum aeterno ea.</p>
+
+<p>Duo cu integre adipisci, liber insolens erroribus vix ei, qui dico suas solet et. Quo erant dignissim an, vis at luptatum oporteat. Inermis qualisque ei pri, eripuit principes at vim, mea ferri autem viderer te. Causae malorum mentitum eu est. Laudem possit eu vis, eros paulo te sea. Mel eu paulo mucius.</p>
+        
+        </div>
+			</div>
+ 
+                        <hr>
+ 
+                        <div class="row">
+                                <div class="seven columns centered">
+                                        <blockquote>“It took me four years to paint like Raphael,<br>
+                                        but a lifetime to paint like a child”</blockquote>
+                                </div>
+                        </div>
+                </section>
+
+           <footer>
+           		<img src="images/picasso.jpg" alt="Picasso">
+           </footer>
+
+           <!-- This is for our js lightbox -->
+           <div class="lightbox">
+           		<img src="images/rose-1-4.jpg">
+           </div>
+
+           <!-- Javascript files -->
+           <script src="js/jquery.js"></script>
+           <script src="js/picasso.js"></script>
+	</body>
+
+</html>
+
